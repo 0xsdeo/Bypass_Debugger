@@ -2,7 +2,7 @@
 
 ## Intro
 
-该脚本可bypass掉：
+该脚本可bypass：
 
 1. new Function --> debugger
 2. constructor --> debugger
@@ -20,8 +20,11 @@ var dbg = function (){
 setInterval(dbg,3000);
 ```
 ![1733639165304](image/README/1733639165304.png)
+
 以及直接将debugger写在script当中的：
+
 ![1733639172782](image/README/1733639172782.png)
+
 以上这两种设条件断点就能过(如果不知道怎么设置条件断点的可以去看一下我之前写的的反调试与反反调试一文)，或者替换也行，不需要hook的，所以我就暂时没去管这个。
 
 ## Contact
