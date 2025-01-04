@@ -34,6 +34,8 @@ setInterval(dbg,3000);
 
 4. 如果发现hook后站点js出现异常，可以考虑使用备用脚本。
 
+5. Bypass_Debugger和Bypass_Debugger(Proxy)这两个脚本都可以使用，两个脚本的区别就是Bypass_Debugger(Proxy)脚本是通过Proxy重写的Function，我的建议是继续使用Bypass_Debugger脚本，Bypass_Debugger(Proxy)脚本可以拿来做学习研究。
+
 ## Contact
 
 如有bug或其他问题可提交issues，或者关注公众号Spade sec联系我。
