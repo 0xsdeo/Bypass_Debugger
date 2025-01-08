@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setInterval</title>
+</head>
+<body>
+
+<script>
+
+
+    setInterval(function () {
+        console.log("case 001 ok");
+        debugger;
+    }, 100)
+
+    function case002Function() {
+        console.log("case 002 ok");
+        debugger;
+    }
+    setInterval(case002Function, 100)
+
+    setInterval(function () {
+        (function () {
+        }['constructor']('debugger')())
+    }, 100);
+
+    {
+        const x = "i am local";
+        console.log(`x is ${x}`);
+        setInterval(function () {
+            debugger;
+            console.log("case 003 ok");
+            // 仍然会有作用域的问题
+            console.log(`setInterval, x is ${x}`);
+        }, 100);
+    }
+
+</script>
+</body>
+</html>
