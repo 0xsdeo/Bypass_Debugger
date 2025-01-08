@@ -20,6 +20,12 @@
     }
     setInterval(case002Function, 100)
 
+    var case003Function = function() {
+        console.log("case 003 ok");
+        debugger;
+    }
+    setInterval(case003Function, 100)
+
     setInterval(function () {
         (function () {
         }['constructor']('debugger')())
@@ -30,7 +36,7 @@
         console.log(`x is ${x}`);
         setInterval(function () {
             debugger;
-            console.log("case 003 ok");
+            console.log("case 004 ok");
             // 仍然会有作用域的问题
             console.log(`setInterval, x is ${x}`);
         }, 100);
